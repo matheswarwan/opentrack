@@ -2,14 +2,14 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
 export const COLORS = {
-  primary: '#4f46e5',
-  black: '#0f172a',
-  grey: '#64748b',
-  lightGrey: '#94a3b8',
-  secondary: '#0d9488',
-  tertiary: '#d97706',
-  quaternary: '#38bdf8',
-  grid: '#e4e7ee',
+  primary: '#1d7a46',
+  black: '#18181b',
+  grey: '#6f6f6b',
+  lightGrey: '#a8a8a3',
+  secondary: '#27272a',
+  tertiary: '#b7791f',
+  quaternary: '#8fb8a0',
+  grid: '#e5e5e3',
 };
 
 /** Width of an element, kept up to date (charts draw at their real pixel width so text stays readable). */

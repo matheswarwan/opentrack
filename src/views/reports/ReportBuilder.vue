@@ -246,36 +246,36 @@ function toggleColumn(id) {
             >
               <svg width="44" height="28" viewBox="0 0 44 28" aria-hidden="true">
                 <template v-if="k.id === 'breakdown'">
-                  <circle cx="14" cy="14" r="10" fill="none" stroke="#e4e7ee" stroke-width="6" />
+                  <circle cx="14" cy="14" r="10" fill="none" stroke="#e5e5e3" stroke-width="6" />
                   <circle
                     cx="14"
                     cy="14"
                     r="10"
                     fill="none"
-                    stroke="#4f46e5"
+                    stroke="#1d7a46"
                     stroke-width="6"
                     stroke-dasharray="38 63"
                     transform="rotate(-90 14 14)"
                   />
-                  <rect x="30" y="16" width="4" height="10" fill="#0d9488" />
-                  <rect x="36" y="8" width="4" height="18" fill="#4f46e5" />
+                  <rect x="30" y="16" width="4" height="10" fill="#27272a" />
+                  <rect x="36" y="8" width="4" height="18" fill="#1d7a46" />
                 </template>
                 <template v-else-if="k.id === 'twoD'">
                   <rect x="2" y="2" width="40" height="24" fill="none" stroke="#a29a95" />
                   <path d="M2 10h40M2 18h40M16 2v24M29 2v24" stroke="#a29a95" />
-                  <rect x="16" y="10" width="13" height="8" fill="#4f46e5" opacity=".5" />
+                  <rect x="16" y="10" width="13" height="8" fill="#1d7a46" opacity=".5" />
                 </template>
                 <template v-else-if="k.id === 'createdVsResolved'">
-                  <polyline points="2,22 12,16 22,18 32,8 42,6" fill="none" stroke="#4f46e5" stroke-width="2" />
-                  <polyline points="2,25 12,22 22,14 32,14 42,10" fill="none" stroke="#0d9488" stroke-width="2" />
+                  <polyline points="2,22 12,16 22,18 32,8 42,6" fill="none" stroke="#1d7a46" stroke-width="2" />
+                  <polyline points="2,25 12,22 22,14 32,14 42,10" fill="none" stroke="#27272a" stroke-width="2" />
                 </template>
                 <template v-else-if="k.id === 'averageAge'">
-                  <polyline points="2,20 12,18 22,12 32,13 42,6" fill="none" stroke="#4f46e5" stroke-width="2" />
-                  <path d="M2 26h40" stroke="#e4e7ee" />
+                  <polyline points="2,20 12,18 22,12 32,13 42,6" fill="none" stroke="#1d7a46" stroke-width="2" />
+                  <path d="M2 26h40" stroke="#e5e5e3" />
                 </template>
                 <template v-else-if="k.id === 'workload'">
-                  <rect x="2" y="3" width="34" height="5" fill="#4f46e5" />
-                  <rect x="2" y="11" width="24" height="5" fill="#4f46e5" />
+                  <rect x="2" y="3" width="34" height="5" fill="#1d7a46" />
+                  <rect x="2" y="11" width="24" height="5" fill="#1d7a46" />
                   <rect x="2" y="19" width="12" height="5" fill="#a29a95" />
                 </template>
                 <template v-else><path d="M2 5h8M14 5h28M2 13h8M14 13h22M2 21h8M14 21h26" stroke="#57534e" stroke-width="2" /></template>

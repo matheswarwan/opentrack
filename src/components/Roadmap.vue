@@ -364,7 +364,7 @@ const statusDot = { todo: 'bg-slate-400', in_progress: 'bg-blue-500', done: 'bg-
                 <path d="M0,0 L8,4 L0,8 z" fill="#b91c1c" />
               </marker>
             </defs>
-            <line v-for="t in ticks" :key="t.day" :x1="t.x" :x2="t.x" y1="0" :y2="bodyHeight" stroke="#f3f4f8" />
+            <line v-for="t in ticks" :key="t.day" :x1="t.x" :x2="t.x" y1="0" :y2="bodyHeight" stroke="#f5f5f4" />
             <path
               v-for="d in deps"
               :key="d.key"
@@ -375,7 +375,7 @@ const statusDot = { todo: 'bg-slate-400', in_progress: 'bg-blue-500', done: 'bg-
               :stroke-dasharray="d.late ? '4 3' : null"
               :marker-end="d.late ? 'url(#rm-arrow-late)' : 'url(#rm-arrow)'"
             />
-            <line :x1="xOf(today)" :x2="xOf(today)" y1="0" :y2="bodyHeight" stroke="#4f46e5" stroke-width="2" />
+            <line :x1="xOf(today)" :x2="xOf(today)" y1="0" :y2="bodyHeight" stroke="#1d7a46" stroke-width="2" />
           </svg>
 
           <!-- rows -->

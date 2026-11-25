@@ -100,7 +100,7 @@ const areas = computed(() => RAG_AREAS.filter((a) => report.value?.rag?.[a.id]))
   font-family: var(--font-sans);
 }
 .status-print .md h2 {
-  border-bottom: 2px solid #4f46e5;
+  border-bottom: 2px solid #1d7a46;
   padding-bottom: 2px;
   font-size: 1.05rem;
 }

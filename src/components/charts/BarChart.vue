@@ -81,7 +81,7 @@ const tipLeft = computed(() => (hover.value === null ? 0 : Math.min(Math.max(gro
         @blur="hover = null"
       >
         <title>{{ title }}</title>
-        <rect v-if="hover !== null" :x="pad.left + hover * band" :y="pad.top" :width="band" :height="plotH" fill="#f3f4f8" />
+        <rect v-if="hover !== null" :x="pad.left + hover * band" :y="pad.top" :width="band" :height="plotH" fill="#f5f5f4" />
         <g v-for="t in scale.ticks" :key="t">
           <line :x1="pad.left" :x2="width - pad.right" :y1="y(t)" :y2="y(t)" :stroke="COLORS.grid" stroke-width="1" />
           <text :x="pad.left - 6" :y="y(t) + 4" text-anchor="end" font-size="11" fill="#78716c">{{ fmtNum(t) }}</text>

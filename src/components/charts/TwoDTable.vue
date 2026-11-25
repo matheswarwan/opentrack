@@ -15,7 +15,7 @@ const props = defineProps({
 const emit = defineEmits(['select']);
 const max = computed(() => Math.max(1, ...props.cells.flat()));
 // light accent shading so bigger numbers stand out
-const shade = (v) => (v ? `rgba(79, 70, 229, ${(0.06 + 0.3 * (v / max.value)).toFixed(3)})` : 'transparent');
+const shade = (v) => (v ? `rgba(29, 122, 70, ${(0.06 + 0.3 * (v / max.value)).toFixed(3)})` : 'transparent');
 const clickable = (ri, ci) => (ri === null || !props.rows[ri].other) && (ci === null || !props.columns[ci].other);
 </script>
 <template>

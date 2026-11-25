@@ -67,7 +67,7 @@ const shown = computed(() => (hover.value === null ? null : props.items[hover.va
         @blur="hover = null"
       >
         <title>{{ title }}</title>
-        <circle v-if="!total" r="65" fill="none" stroke="#e4e7ee" stroke-width="30" />
+        <circle v-if="!total" r="65" fill="none" stroke="#e5e5e3" stroke-width="30" />
         <path
           v-for="(a, i) in arcs"
           :key="i"
