@@ -349,14 +349,16 @@ const daysLeft = computed(() => {
                 </div>
                 <div class="flex items-center gap-1.5 text-xs text-slate-500">
                   <TypeIcon :type="i.type" :size="14" />
-                  <span class="font-medium" :class="i.status.category === 'done' ? 'line-through' : ''">{{ i.key }}</span>
+                  <span class="shrink-0 whitespace-nowrap font-medium" :class="i.status.category === 'done' ? 'line-through' : ''">{{
+                    i.key
+                  }}</span>
                   <span
                     v-if="i.dueDate"
-                    class="chip"
+                    class="chip shrink-0 whitespace-nowrap"
                     :class="i.dueDate < today && i.status.category !== 'done' ? 'bg-red-100 text-red-800' : 'bg-slate-100'"
                     >{{ fmtDate(i.dueDate) }}</span
                   >
-                  <span class="ml-auto flex items-center gap-1.5">
+                  <span class="ml-auto flex min-w-0 items-center gap-1.5">
                     <span
                       v-if="i.storyPoints !== null"
                       class="rounded-full bg-slate-200 px-1.5 font-semibold text-slate-700"

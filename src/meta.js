@@ -3,11 +3,11 @@
 import { TYPES as TYPE_IDS, PRIORITIES as PRIORITY_IDS, STATUS_CATEGORIES, LINK_TYPES as LINK_IDS } from '../shared/issueMeta.js';
 
 const TYPE_LOOK = {
-  epic: { label: 'Epic', color: '#7c3aed', glyph: 'E' },
-  story: { label: 'Story', color: '#16a34a', glyph: 'S' },
-  task: { label: 'Task', color: '#2563eb', glyph: 'T' },
-  bug: { label: 'Bug', color: '#dc2626', glyph: 'B' },
-  subtask: { label: 'Sub-task', color: '#0891b2', glyph: 's' },
+  epic: { label: 'Epic', color: '#a16207', glyph: 'E' },
+  story: { label: 'Story', color: '#1d7a46', glyph: 'S' },
+  task: { label: 'Task', color: '#3f3f46', glyph: 'T' },
+  bug: { label: 'Bug', color: '#b42318', glyph: 'B' },
+  subtask: { label: 'Sub-task', color: '#78716c', glyph: 's' },
 };
 export const TYPES = TYPE_IDS.map((id) => ({ id, ...TYPE_LOOK[id] }));
 export const typeOf = (id) => TYPES.find((t) => t.id === id) || TYPES[2];
@@ -16,8 +16,8 @@ const PRIORITY_LOOK = {
   highest: { label: 'Highest', color: '#b91c1c', arrow: '⇈' },
   high: { label: 'High', color: '#ea580c', arrow: '↑' },
   medium: { label: 'Medium', color: '#ca8a04', arrow: '=' },
-  low: { label: 'Low', color: '#2563eb', arrow: '↓' },
-  lowest: { label: 'Lowest', color: '#64748b', arrow: '⇊' },
+  low: { label: 'Low', color: '#57534e', arrow: '↓' },
+  lowest: { label: 'Lowest', color: '#a8a29e', arrow: '⇊' },
 };
 export const PRIORITIES = PRIORITY_IDS.map((id) => ({ id, ...PRIORITY_LOOK[id] }));
 export const priorityOf = (id) => PRIORITIES.find((p) => p.id === id) || PRIORITIES[2];

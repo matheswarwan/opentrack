@@ -57,7 +57,7 @@ export async function verifyPassword(password, stored) {
   return safeEqual(b64url(bits), hash);
 }
 
-const COLORS = ['#0F766E', '#2563EB', '#7C3AED', '#DB2777', '#EA580C', '#16A34A', '#0891B2', '#9333EA', '#CA8A04', '#DC2626'];
+const COLORS = ['#1D7A46', '#3F3F46', '#A16207', '#B42318', '#57534E', '#0F5E5A', '#7C5C3B', '#4D6B2F', '#8A3B12', '#52525B'];
 export function avatarColor(seed) {
   let h = 0;
   for (const ch of String(seed)) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
