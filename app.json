@@ -1,0 +1,26 @@
+{
+  "name": "opentrack",
+  "env": {
+    "SETUP_TOKEN": {
+      "description": "Secret you type once at /setup to create the first admin. Any long random string (for example from `openssl rand -hex 24`).",
+      "order": 1
+    },
+    "DATABASE_URL": {
+      "description": "Postgres connection string, for example a Cloud SQL database (postgres://user:password@host/db). Leave empty to try it out with SQLite inside the container: that data is lost whenever the container restarts.",
+      "required": false,
+      "order": 2
+    },
+    "DEMO_MODE": {
+      "description": "true turns on the public read-only demo account on the sign-in page. Leave false for a real workspace.",
+      "value": "false",
+      "required": false,
+      "order": 3
+    }
+  },
+  "options": {
+    "allow-unauthenticated": true,
+    "memory": "512Mi",
+    "cpu": "1",
+    "max-instances": 1
+  }
+}

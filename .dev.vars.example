@@ -1,0 +1,2 @@
+# Secret needed once, to create the first admin at /setup. Any long random string.
+SETUP_TOKEN=change-me-to-a-long-random-string

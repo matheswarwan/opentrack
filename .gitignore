@@ -1,0 +1,11 @@
+node_modules/
+dist/
+data/
+.wrangler/
+.dev.vars
+*.log
+.env
+.claude/
+
+# personal deployment configs (wrangler -c wrangler.<name>.toml)
+wrangler.*.toml
