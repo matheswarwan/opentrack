@@ -417,7 +417,7 @@ const statusDot = { todo: 'bg-slate-400', in_progress: 'bg-blue-500', done: 'bg-
                   <span class="font-medium text-slate-500" :class="r.issue.status.category === 'done' ? 'line-through' : ''">{{
                     r.issue.key
                   }}</span>
-                  <span class="hidden sm:inline">{{ r.issue.title }}</span>
+                  <span class="ml-1 hidden sm:inline">{{ r.issue.title }}</span>
                 </button>
                 <span
                   v-if="lateBy.has(r.issue.key)"

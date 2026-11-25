@@ -165,7 +165,7 @@ const tabs = [
           <div>
             <strong class="font-medium">{{ a.actor.name || 'Former user' }}</strong> {{ activityVerb(a) }}
             <template v-if="a.kind === 'change' && a.field === 'status'">
-              to <strong>{{ a.to }}</strong> on</template
+              to <strong>{{ a.to }}</strong> on&nbsp;</template
             >
             <RouterLink :to="`/browse/${a.issue.key}`" class="link">{{ a.issue.key }}</RouterLink>
             <span v-if="a.viaAi" class="chip bg-violet-100 text-violet-900" title="Made by an AI assistant (MCP) acting for this person"
